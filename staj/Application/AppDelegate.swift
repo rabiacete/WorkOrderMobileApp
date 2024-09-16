@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import IQKeyboardManagerSwift
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -27,6 +28,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     ) -> Bool {
         
         loadableProvider.configure(application, launchOptions)
+        IQKeyboardManager.shared.enable = true
         return true
     }
     

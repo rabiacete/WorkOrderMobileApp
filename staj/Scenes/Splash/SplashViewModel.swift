@@ -17,6 +17,8 @@ class SplashViewModel: BaseViewModel, SplashViewModelProtocol, ActionSendable {
     enum SplashhAction {
         case presentationModel(PresentationModel)
         case openOnboarding
+        case openLogin
+        case openApp
     }
     
     struct PresentationModel {
@@ -31,9 +33,26 @@ class SplashViewModel: BaseViewModel, SplashViewModelProtocol, ActionSendable {
         
         sendAction(.presentationModel(.init(appName: .appName, logo: .star)))
         
+        let isFirstLaunch:Bool = UserDefaultsHelper().get(key: .general(generalKey: .firstLaunch))~
+        
         DispatchQueue.main.asyncAfter(deadline: .now() + 1, execute: { [weak self] in
             guard let self else { return }
-            self.sendAction(.openOnboarding)
+            
+            /*** #REMOVE */
+            self.sendAction(.openLogin) // Target Page
+            return
+            /*** #HERE */
+            
+            if isFirstLaunch {
+                self.sendAction(.openOnboarding)
+            } else {
+                if AuthManager.shared.isUserLogined() {
+                    self.sendAction(.openApp)
+                } else {
+                    self.sendAction(.openLogin)
+                }
+            }
+  
         })
     }
 }

@@ -16,6 +16,8 @@ public final class WindowContainer {
 public enum Scenes {
     case splash
     case onboarding
+    case login
+    case register
     case paywall
     case tabbar
     case tab1
@@ -28,16 +30,20 @@ public enum Scenes {
             return SplashViewController()
         case .onboarding:
             return OnboardingViewController()
+        case .login:
+            return LoginViewController()
+        case .register:
+            return RegisterViewController()
         case .paywall:
             return PaywallViewController()
         case .tabbar:
             return TabbarViewController()
         case .tab1:
-            return PaywallViewController()
+            return WorkFlowViewController()
         case .tab2:
-            return PaywallViewController()
+            return DefinationsViewController()
         case .tab3:
-            return PaywallViewController()
+            return ProfileViewController()
         }
     }
 }

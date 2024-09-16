@@ -85,6 +85,10 @@ class BaseView: UIView {
     public func getBottomSafeAreaInset() -> CGFloat {
         return WindowContainer.window?.safeAreaInsets.bottom ?? 0
     }
+    
+    public func setSpacing(_ spacing: CGFloat) {
+        containerStackView.spacing = spacing
+    }
 }
 
 extension BaseView {

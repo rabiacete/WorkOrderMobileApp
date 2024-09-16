@@ -23,6 +23,10 @@ class SplashViewController: BaseViewController<SplashViewModel,SplashView> {
                 self.viewContainer.setPresentationModel(model: model)
             case .openOnboarding:
                 self.openOnboarding()
+            case .openLogin:
+                self.openLogin()
+            case .openApp:
+                self.openApp()
             }
         }
     }
@@ -33,6 +37,14 @@ class SplashViewController: BaseViewController<SplashViewModel,SplashView> {
     
     func openOnboarding() {
         presentScene(scene: .onboarding, animated: true)
+    }
+    
+    func openLogin() {
+        presentScene(scene: .login, animated: true)
+    }
+    
+    func openApp() {
+        presentScene(scene: .tabbar, animated: true)
     }
 }
 

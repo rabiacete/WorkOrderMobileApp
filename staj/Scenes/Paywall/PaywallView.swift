@@ -51,20 +51,8 @@ extension PaywallView {
     }
     
     @objc func buttonTapped(_ sender: UIButton) {
-        if sender.tag == 1 {
-            let durum = StateModel(stateName: "rabia", stateCode: 0)
-            FirestoreManager.shared.addDocument(collection: .states, data: durum.toDictionary() ?? ["":""]) { response in
-                print(response)
-            }
-        }
-        if sender.tag == 2 {
-            FirestoreManager.shared.getDocuments(collection: .states, model: StateModel.self) { response in
-                guard let response else {
-                    
-                    return
-                }
-                print(response)
-            }
+        AuthManager.shared.signOut {
+            
         }
     }
 }

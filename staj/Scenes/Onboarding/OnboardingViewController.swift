@@ -25,6 +25,8 @@ class OnboardingViewController: BaseViewController<OnboardingViewModel,Onboardin
                 self.viewContainer.setCurrentPageModel(model: model)
             case .openTabbar:
                 self.openTabbar()
+            case .openLogin:
+                self.openLogin()
             }
         }
     }
@@ -45,5 +47,8 @@ class OnboardingViewController: BaseViewController<OnboardingViewModel,Onboardin
         presentScene(scene: .tabbar, animated: true)
     }
     
+    private func openLogin() {
+        presentScene(scene: .login, animated: true)
+    }
 }
 

@@ -13,8 +13,7 @@ class AppConfigurator: AppLoadable {
     
     public lazy var loadables: [AppLoadable] = {
         return [FirebaseLoader(),
-                AppStartLoader(),
-                StoreLoader()]
+                AppStartLoader()]
     }()
 
     // MARK: - Lifecycle

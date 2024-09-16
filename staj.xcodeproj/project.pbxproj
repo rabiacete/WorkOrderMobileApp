@@ -55,13 +55,30 @@
 		1CA20B822C8E4BB500A0383E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1CA20B812C8E4BB500A0383E /* Images.xcassets */; };
 		1CC000372C90E8130091D682 /* FirestoreManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CC000362C90E8130091D682 /* FirestoreManager.swift */; };
 		1CC000392C90F3E50091D682 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1CC000382C90F3E50091D682 /* GoogleService-Info.plist */; };
+		2C35E5AE2C98C6B8005B19B5 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C35E5AB2C98C6B8005B19B5 /* LoginViewController.swift */; };
+		2C35E5AF2C98C6B8005B19B5 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C35E5AC2C98C6B8005B19B5 /* LoginView.swift */; };
+		2C35E5B02C98C6B8005B19B5 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C35E5AD2C98C6B8005B19B5 /* LoginViewModel.swift */; };
+		2C35E5B42C98C8B3005B19B5 /* InputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C35E5B32C98C8B3005B19B5 /* InputView.swift */; };
+		2C35E5B62C98DB81005B19B5 /* AuthManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C35E5B52C98DB81005B19B5 /* AuthManager.swift */; };
+		2C35E5BB2C98E139005B19B5 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C35E5B82C98E139005B19B5 /* RegisterViewController.swift */; };
+		2C35E5BC2C98E139005B19B5 /* RegisterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C35E5B92C98E139005B19B5 /* RegisterView.swift */; };
+		2C35E5BD2C98E139005B19B5 /* RegisterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C35E5BA2C98E139005B19B5 /* RegisterViewModel.swift */; };
+		2C35E5C22C98E178005B19B5 /* WorkFlowViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C35E5BF2C98E178005B19B5 /* WorkFlowViewController.swift */; };
+		2C35E5C32C98E178005B19B5 /* WorkFlowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C35E5C02C98E178005B19B5 /* WorkFlowView.swift */; };
+		2C35E5C42C98E178005B19B5 /* WorkFlowViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C35E5C12C98E178005B19B5 /* WorkFlowViewModel.swift */; };
+		2C35E5C92C98E1B0005B19B5 /* DefinationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C35E5C62C98E1B0005B19B5 /* DefinationsViewController.swift */; };
+		2C35E5CA2C98E1B0005B19B5 /* DefinationsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C35E5C72C98E1B0005B19B5 /* DefinationsView.swift */; };
+		2C35E5CB2C98E1B0005B19B5 /* DefinationsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C35E5C82C98E1B0005B19B5 /* DefinationsViewModel.swift */; };
+		2C35E5D02C98E1C9005B19B5 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C35E5CD2C98E1C9005B19B5 /* ProfileViewController.swift */; };
+		2C35E5D12C98E1C9005B19B5 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C35E5CE2C98E1C9005B19B5 /* ProfileView.swift */; };
+		2C35E5D22C98E1C9005B19B5 /* ProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C35E5CF2C98E1C9005B19B5 /* ProfileViewModel.swift */; };
 		72BD03FB9BD6C354C0164917 /* Pods_staj.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5078E2A5C6293A164D978682 /* Pods_staj.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		10A86304ED156CA89480D66D /* Pods-staj.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-staj.debug.xcconfig"; path = "Target Support Files/Pods-staj/Pods-staj.debug.xcconfig"; sourceTree = "<group>"; };
 		1C1404942C8E3C0700509329 /* staj.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = staj.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		1C14049A2C8E3C0700509329 /* Podfile */ = {isa = PBXFileReference; lastKnownFileType = text; name = Podfile; path = ../../Podfile; sourceTree = "<group>"; };
+		1C14049A2C8E3C0700509329 /* Podfile */ = {isa = PBXFileReference; lastKnownFileType = text; name = Podfile; path = ../../Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		1C14049D2C8E3C0700509329 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1C14049F2C8E3C0700509329 /* AppConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConfigurator.swift; sourceTree = "<group>"; };
 		1C1404A22C8E3C0700509329 /* FirebaseLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseLoader.swift; sourceTree = "<group>"; };
@@ -110,6 +127,23 @@
 		1CA20B812C8E4BB500A0383E /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		1CC000362C90E8130091D682 /* FirestoreManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirestoreManager.swift; sourceTree = "<group>"; };
 		1CC000382C90F3E50091D682 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		2C35E5AB2C98C6B8005B19B5 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		2C35E5AC2C98C6B8005B19B5 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		2C35E5AD2C98C6B8005B19B5 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		2C35E5B32C98C8B3005B19B5 /* InputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = InputView.swift; path = staj/Scenes/Login/InputView.swift; sourceTree = SOURCE_ROOT; };
+		2C35E5B52C98DB81005B19B5 /* AuthManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthManager.swift; sourceTree = "<group>"; };
+		2C35E5B82C98E139005B19B5 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		2C35E5B92C98E139005B19B5 /* RegisterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterView.swift; sourceTree = "<group>"; };
+		2C35E5BA2C98E139005B19B5 /* RegisterViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewModel.swift; sourceTree = "<group>"; };
+		2C35E5BF2C98E178005B19B5 /* WorkFlowViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkFlowViewController.swift; sourceTree = "<group>"; };
+		2C35E5C02C98E178005B19B5 /* WorkFlowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkFlowView.swift; sourceTree = "<group>"; };
+		2C35E5C12C98E178005B19B5 /* WorkFlowViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkFlowViewModel.swift; sourceTree = "<group>"; };
+		2C35E5C62C98E1B0005B19B5 /* DefinationsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefinationsViewController.swift; sourceTree = "<group>"; };
+		2C35E5C72C98E1B0005B19B5 /* DefinationsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefinationsView.swift; sourceTree = "<group>"; };
+		2C35E5C82C98E1B0005B19B5 /* DefinationsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefinationsViewModel.swift; sourceTree = "<group>"; };
+		2C35E5CD2C98E1C9005B19B5 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		2C35E5CE2C98E1C9005B19B5 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		2C35E5CF2C98E1C9005B19B5 /* ProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewModel.swift; sourceTree = "<group>"; };
 		5078E2A5C6293A164D978682 /* Pods_staj.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_staj.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D392688C56ECEB53F52BCD17 /* Pods-staj.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-staj.release.xcconfig"; path = "Target Support Files/Pods-staj/Pods-staj.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -147,6 +181,7 @@
 		1C1404962C8E3C0700509329 /* staj */ = {
 			isa = PBXGroup;
 			children = (
+				2C35E5B12C98C89A005B19B5 /* Views */,
 				1C1404972C8E3C0700509329 /* Resources */,
 				1C14049C2C8E3C0700509329 /* Application */,
 				1C1404A82C8E3C0700509329 /* Helpers */,
@@ -233,6 +268,7 @@
 				1C1404D12C8E3C0700509329 /* StoreManager.swift */,
 				1C1404D32C8E3C0700509329 /* UserDefaults.swift */,
 				1CC000362C90E8130091D682 /* FirestoreManager.swift */,
+				2C35E5B52C98DB81005B19B5 /* AuthManager.swift */,
 			);
 			path = Managers;
 			sourceTree = "<group>";
@@ -240,6 +276,11 @@
 		1C1404DD2C8E3C0700509329 /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
+				2C35E5CC2C98E1BF005B19B5 /* Profile */,
+				2C35E5C52C98E1A4005B19B5 /* Definations */,
+				2C35E5BE2C98E15E005B19B5 /* WorkFlow */,
+				2C35E5B72C98E12C005B19B5 /* Register */,
+				2C35E5AA2C98C6A4005B19B5 /* Login */,
 				1C1404DE2C8E3C0700509329 /* Splash */,
 				1C1404E52C8E3C0700509329 /* Onboarding */,
 				1C1404EC2C8E3C0700509329 /* Paywall */,
@@ -294,6 +335,73 @@
 				5078E2A5C6293A164D978682 /* Pods_staj.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		2C35E5AA2C98C6A4005B19B5 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				2C35E5AB2C98C6B8005B19B5 /* LoginViewController.swift */,
+				2C35E5AC2C98C6B8005B19B5 /* LoginView.swift */,
+				2C35E5AD2C98C6B8005B19B5 /* LoginViewModel.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		2C35E5B12C98C89A005B19B5 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				2C35E5B22C98C89F005B19B5 /* InputView */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		2C35E5B22C98C89F005B19B5 /* InputView */ = {
+			isa = PBXGroup;
+			children = (
+				2C35E5B32C98C8B3005B19B5 /* InputView.swift */,
+			);
+			name = InputView;
+			path = "../New Group/InputView";
+			sourceTree = "<group>";
+		};
+		2C35E5B72C98E12C005B19B5 /* Register */ = {
+			isa = PBXGroup;
+			children = (
+				2C35E5B82C98E139005B19B5 /* RegisterViewController.swift */,
+				2C35E5B92C98E139005B19B5 /* RegisterView.swift */,
+				2C35E5BA2C98E139005B19B5 /* RegisterViewModel.swift */,
+			);
+			path = Register;
+			sourceTree = "<group>";
+		};
+		2C35E5BE2C98E15E005B19B5 /* WorkFlow */ = {
+			isa = PBXGroup;
+			children = (
+				2C35E5BF2C98E178005B19B5 /* WorkFlowViewController.swift */,
+				2C35E5C02C98E178005B19B5 /* WorkFlowView.swift */,
+				2C35E5C12C98E178005B19B5 /* WorkFlowViewModel.swift */,
+			);
+			path = WorkFlow;
+			sourceTree = "<group>";
+		};
+		2C35E5C52C98E1A4005B19B5 /* Definations */ = {
+			isa = PBXGroup;
+			children = (
+				2C35E5C62C98E1B0005B19B5 /* DefinationsViewController.swift */,
+				2C35E5C72C98E1B0005B19B5 /* DefinationsView.swift */,
+				2C35E5C82C98E1B0005B19B5 /* DefinationsViewModel.swift */,
+			);
+			path = Definations;
+			sourceTree = "<group>";
+		};
+		2C35E5CC2C98E1BF005B19B5 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				2C35E5CD2C98E1C9005B19B5 /* ProfileViewController.swift */,
+				2C35E5CE2C98E1C9005B19B5 /* ProfileView.swift */,
+				2C35E5CF2C98E1C9005B19B5 /* ProfileViewModel.swift */,
+			);
+			path = Profile;
 			sourceTree = "<group>";
 		};
 		7B03353A853C9B649443410F /* Pods */ = {
@@ -453,6 +561,9 @@
 				1C1404F22C8E3C0700509329 /* PaywallViewController.swift in Sources */,
 				1C1404E22C8E3C0700509329 /* SplashViewModel.swift in Sources */,
 				1C1404EE2C8E3C0700509329 /* PaywallViewModel.swift in Sources */,
+				2C35E5BB2C98E139005B19B5 /* RegisterViewController.swift in Sources */,
+				2C35E5BC2C98E139005B19B5 /* RegisterView.swift in Sources */,
+				2C35E5BD2C98E139005B19B5 /* RegisterViewModel.swift in Sources */,
 				1C1404E02C8E3C0700509329 /* SplashViewController.swift in Sources */,
 				1C1404F52C8E3C0700509329 /* TabbarViewController.swift in Sources */,
 				1C1404CC2C8E3C0700509329 /* Logger.swift in Sources */,
@@ -471,18 +582,32 @@
 				1C1404B82C8E3C0700509329 /* Images.swift in Sources */,
 				1C1404B62C8E3C0700509329 /* Fonts.swift in Sources */,
 				1C1404B42C8E3C0700509329 /* EndPoint.swift in Sources */,
+				2C35E5C22C98E178005B19B5 /* WorkFlowViewController.swift in Sources */,
+				2C35E5C32C98E178005B19B5 /* WorkFlowView.swift in Sources */,
+				2C35E5C42C98E178005B19B5 /* WorkFlowViewModel.swift in Sources */,
 				1C1404A02C8E3C0700509329 /* AppConfigurator.swift in Sources */,
 				1C1404B22C8E3C0700509329 /* Constants.swift in Sources */,
 				1C1404E92C8E3C0700509329 /* OnboardingView.swift in Sources */,
 				1C1404B02C8E3C0700509329 /* Localization.swift in Sources */,
 				1C1404BA2C8E3C0700509329 /* UIViewController+Extensions.swift in Sources */,
 				1C1404C62C8E3C0700509329 /* EventsProvider.swift in Sources */,
+				2C35E5D02C98E1C9005B19B5 /* ProfileViewController.swift in Sources */,
+				2C35E5D12C98E1C9005B19B5 /* ProfileView.swift in Sources */,
+				2C35E5D22C98E1C9005B19B5 /* ProfileViewModel.swift in Sources */,
 				1C1404A72C8E3C0700509329 /* StoreLoader.swift in Sources */,
 				1C1404CA2C8E3C0700509329 /* LocalizationManager.swift in Sources */,
 				1C1404BF2C8E3C0700509329 /* BaseViewController.swift in Sources */,
 				1C1404C32C8E3C0700509329 /* BaseView.swift in Sources */,
 				1C1404E42C8E3C0700509329 /* SplashView.swift in Sources */,
 				1C14049E2C8E3C0700509329 /* AppDelegate.swift in Sources */,
+				2C35E5AE2C98C6B8005B19B5 /* LoginViewController.swift in Sources */,
+				2C35E5B42C98C8B3005B19B5 /* InputView.swift in Sources */,
+				2C35E5AF2C98C6B8005B19B5 /* LoginView.swift in Sources */,
+				2C35E5B62C98DB81005B19B5 /* AuthManager.swift in Sources */,
+				2C35E5C92C98E1B0005B19B5 /* DefinationsViewController.swift in Sources */,
+				2C35E5CA2C98E1B0005B19B5 /* DefinationsView.swift in Sources */,
+				2C35E5CB2C98E1B0005B19B5 /* DefinationsViewModel.swift in Sources */,
+				2C35E5B02C98C6B8005B19B5 /* LoginViewModel.swift in Sources */,
 				1C1404AE2C8E3C0700509329 /* SafeUnwrap.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

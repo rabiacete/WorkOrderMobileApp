@@ -18,6 +18,7 @@ class OnboardingViewModel: BaseViewModel, OnboardingViewModelProtocol, ActionSen
         case presentationModel(PresentationModel)
         case currentPageModel(PageModel)
         case openTabbar
+        case openLogin
     }
     
     struct PageModel {
@@ -71,12 +72,17 @@ class OnboardingViewModel: BaseViewModel, OnboardingViewModelProtocol, ActionSen
             let model = pageModels[pageIndex]
             sendAction(.currentPageModel(model))
         } else {
-            sendAction(.openTabbar)
+            skipButtonPressed()
         }
     }
     
     func skipButtonPressed() {
-        sendAction(.openTabbar)
+        UserDefaultsHelper().save(key: .general(generalKey: .firstLaunch), data: false)
+        if AuthManager.shared.isUserLogined() {
+            sendAction(.openTabbar)
+        } else {
+            sendAction(.openLogin)
+        }   
     }
 }
 
