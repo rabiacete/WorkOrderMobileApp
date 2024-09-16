@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>APP_NAME</key>
+	<string></string>
+	<key>SM_RESTORE_FAILED</key>
+	<string>Restore Failed</string>
+	<key>SM_RESTORE_SUCCESS</key>
+	<string>Restore is successful</string>
+	<key>SM_NOTING TO RESTORE</key>
+	<string>Nothing to Restore</string>
+	<key>SM_PURCHASE_SUCCESS</key>
+	<string>Purchase Succeed</string>
+	<key>SM_RECIPIENT_VALIDATION_FAILED</key>
+	<string>Recipient Validation Failed</string>
+	<key>SM_UNKNOW</key>
+	<string>Unknown error. Please contact support</string>
+	<key>SM_CLIENT_INVALID</key>
+	<string>Not allowed to make the payment</string>
+	<key>SM_PAYMENT_CANCELLED</key>
+	<string>Payment cancelled</string>
+	<key>SM_PAYMENT_INVALID</key>
+	<string>The purchase identifier was invalid</string>
+	<key>SM_PAYMENT_NOT_ALLOWED</key>
+	<string>The device is not allowed to make the payment</string>
+	<key>SM_PRODUCT_NOT_AVAILABLE</key>
+	<string>The product is not available in the current storefront</string>
+	<key>SM_PERMISSION_DENIED</key>
+	<string>Access to cloud service information is not allowed</string>
+	<key>SM_NETWORK_FAIL</key>
+	<string>Could not connect to the network</string>
+	<key>SM_REVOKED</key>
+	<string>User has revoked permission to use this cloud service</string>
+</dict>
+</plist>
