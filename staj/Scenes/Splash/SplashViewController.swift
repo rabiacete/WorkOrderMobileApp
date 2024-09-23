@@ -27,6 +27,7 @@ class SplashViewController: BaseViewController<SplashViewModel,SplashView> {
                 self.openLogin()
             case .openApp:
                 self.openApp()
+           
             }
         }
     }

@@ -51,6 +51,18 @@
 		1C1404F72C8E3C0700509329 /* TabbarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C1404F62C8E3C0700509329 /* TabbarView.swift */; };
 		1C1404F92C8E3C0700509329 /* TabbarDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C1404F82C8E3C0700509329 /* TabbarDataProvider.swift */; };
 		1C1404FD2C8E3C0700509329 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1C1404FC2C8E3C0700509329 /* LaunchScreen.storyboard */; };
+		1C7855772C9CBC5F0001781D /* AddStateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C7855742C9CBC5F0001781D /* AddStateViewController.swift */; };
+		1C7855782C9CBC5F0001781D /* AddStateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C7855752C9CBC5F0001781D /* AddStateView.swift */; };
+		1C7855792C9CBC5F0001781D /* AddStateViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C7855762C9CBC5F0001781D /* AddStateViewModel.swift */; };
+		1C78557E2C9CBC890001781D /* AddItemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C78557B2C9CBC890001781D /* AddItemViewController.swift */; };
+		1C78557F2C9CBC890001781D /* AddItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C78557C2C9CBC890001781D /* AddItemView.swift */; };
+		1C7855802C9CBC890001781D /* AddItemViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C78557D2C9CBC890001781D /* AddItemViewModel.swift */; };
+		1C7855852C9CBCA60001781D /* AddTeamViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C7855822C9CBCA60001781D /* AddTeamViewController.swift */; };
+		1C7855862C9CBCA60001781D /* AddTeamView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C7855832C9CBCA60001781D /* AddTeamView.swift */; };
+		1C7855872C9CBCA60001781D /* AddTeamViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C7855842C9CBCA60001781D /* AddTeamViewModel.swift */; };
+		1C78558D2C9CC5540001781D /* AddWorkFlowViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C78558A2C9CC5540001781D /* AddWorkFlowViewController.swift */; };
+		1C78558E2C9CC5540001781D /* AddWorkFlowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C78558B2C9CC5540001781D /* AddWorkFlowView.swift */; };
+		1C78558F2C9CC5540001781D /* AddWorkFlowViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C78558C2C9CC5540001781D /* AddWorkFlowViewModel.swift */; };
 		1CA20B802C8E4B9900A0383E /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1CA20B7F2C8E4B9900A0383E /* Colors.xcassets */; };
 		1CA20B822C8E4BB500A0383E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1CA20B812C8E4BB500A0383E /* Images.xcassets */; };
 		1CC000372C90E8130091D682 /* FirestoreManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CC000362C90E8130091D682 /* FirestoreManager.swift */; };
@@ -123,6 +135,18 @@
 		1C1404F82C8E3C0700509329 /* TabbarDataProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabbarDataProvider.swift; sourceTree = "<group>"; };
 		1C1404FA2C8E3C0700509329 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1C1404FC2C8E3C0700509329 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		1C7855742C9CBC5F0001781D /* AddStateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddStateViewController.swift; sourceTree = "<group>"; };
+		1C7855752C9CBC5F0001781D /* AddStateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddStateView.swift; sourceTree = "<group>"; };
+		1C7855762C9CBC5F0001781D /* AddStateViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddStateViewModel.swift; sourceTree = "<group>"; };
+		1C78557B2C9CBC890001781D /* AddItemViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddItemViewController.swift; sourceTree = "<group>"; };
+		1C78557C2C9CBC890001781D /* AddItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddItemView.swift; sourceTree = "<group>"; };
+		1C78557D2C9CBC890001781D /* AddItemViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddItemViewModel.swift; sourceTree = "<group>"; };
+		1C7855822C9CBCA60001781D /* AddTeamViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTeamViewController.swift; sourceTree = "<group>"; };
+		1C7855832C9CBCA60001781D /* AddTeamView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTeamView.swift; sourceTree = "<group>"; };
+		1C7855842C9CBCA60001781D /* AddTeamViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTeamViewModel.swift; sourceTree = "<group>"; };
+		1C78558A2C9CC5540001781D /* AddWorkFlowViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddWorkFlowViewController.swift; sourceTree = "<group>"; };
+		1C78558B2C9CC5540001781D /* AddWorkFlowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddWorkFlowView.swift; sourceTree = "<group>"; };
+		1C78558C2C9CC5540001781D /* AddWorkFlowViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddWorkFlowViewModel.swift; sourceTree = "<group>"; };
 		1CA20B7F2C8E4B9900A0383E /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
 		1CA20B812C8E4BB500A0383E /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		1CC000362C90E8130091D682 /* FirestoreManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirestoreManager.swift; sourceTree = "<group>"; };
@@ -329,6 +353,53 @@
 			path = Tabbar;
 			sourceTree = "<group>";
 		};
+		1C7855732C9CBC440001781D /* AddState */ = {
+			isa = PBXGroup;
+			children = (
+				1C7855742C9CBC5F0001781D /* AddStateViewController.swift */,
+				1C7855752C9CBC5F0001781D /* AddStateView.swift */,
+				1C7855762C9CBC5F0001781D /* AddStateViewModel.swift */,
+			);
+			path = AddState;
+			sourceTree = "<group>";
+		};
+		1C78557A2C9CBC770001781D /* AddItem */ = {
+			isa = PBXGroup;
+			children = (
+				1C78557B2C9CBC890001781D /* AddItemViewController.swift */,
+				1C78557C2C9CBC890001781D /* AddItemView.swift */,
+				1C78557D2C9CBC890001781D /* AddItemViewModel.swift */,
+			);
+			path = AddItem;
+			sourceTree = "<group>";
+		};
+		1C7855812C9CBC950001781D /* AddTeam */ = {
+			isa = PBXGroup;
+			children = (
+				1C7855822C9CBCA60001781D /* AddTeamViewController.swift */,
+				1C7855832C9CBCA60001781D /* AddTeamView.swift */,
+				1C7855842C9CBCA60001781D /* AddTeamViewModel.swift */,
+			);
+			path = AddTeam;
+			sourceTree = "<group>";
+		};
+		1C7855882C9CC5340001781D /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "New Group";
+			sourceTree = "<group>";
+		};
+		1C7855892C9CC53B0001781D /* AddWorkFlow */ = {
+			isa = PBXGroup;
+			children = (
+				1C78558A2C9CC5540001781D /* AddWorkFlowViewController.swift */,
+				1C78558B2C9CC5540001781D /* AddWorkFlowView.swift */,
+				1C78558C2C9CC5540001781D /* AddWorkFlowViewModel.swift */,
+			);
+			path = AddWorkFlow;
+			sourceTree = "<group>";
+		};
 		2055644D7BB2BB1B93192534 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -377,6 +448,8 @@
 		2C35E5BE2C98E15E005B19B5 /* WorkFlow */ = {
 			isa = PBXGroup;
 			children = (
+				1C7855892C9CC53B0001781D /* AddWorkFlow */,
+				1C7855882C9CC5340001781D /* New Group */,
 				2C35E5BF2C98E178005B19B5 /* WorkFlowViewController.swift */,
 				2C35E5C02C98E178005B19B5 /* WorkFlowView.swift */,
 				2C35E5C12C98E178005B19B5 /* WorkFlowViewModel.swift */,
@@ -387,6 +460,9 @@
 		2C35E5C52C98E1A4005B19B5 /* Definations */ = {
 			isa = PBXGroup;
 			children = (
+				1C7855812C9CBC950001781D /* AddTeam */,
+				1C78557A2C9CBC770001781D /* AddItem */,
+				1C7855732C9CBC440001781D /* AddState */,
 				2C35E5C62C98E1B0005B19B5 /* DefinationsViewController.swift */,
 				2C35E5C72C98E1B0005B19B5 /* DefinationsView.swift */,
 				2C35E5C82C98E1B0005B19B5 /* DefinationsViewModel.swift */,
@@ -555,9 +631,12 @@
 			files = (
 				1C1404CE2C8E3C0700509329 /* NetworkManager.swift in Sources */,
 				1C1404A32C8E3C0700509329 /* FirebaseLoader.swift in Sources */,
+				1C78558E2C9CC5540001781D /* AddWorkFlowView.swift in Sources */,
 				1C1404F72C8E3C0700509329 /* TabbarView.swift in Sources */,
+				1C7855872C9CBCA60001781D /* AddTeamViewModel.swift in Sources */,
 				1C1404D22C8E3C0700509329 /* StoreManager.swift in Sources */,
 				1C1404EB2C8E3C0700509329 /* OnboardingViewModel.swift in Sources */,
+				1C78557E2C9CBC890001781D /* AddItemViewController.swift in Sources */,
 				1C1404F22C8E3C0700509329 /* PaywallViewController.swift in Sources */,
 				1C1404E22C8E3C0700509329 /* SplashViewModel.swift in Sources */,
 				1C1404EE2C8E3C0700509329 /* PaywallViewModel.swift in Sources */,
@@ -570,23 +649,29 @@
 				1C1404D42C8E3C0700509329 /* UserDefaults.swift in Sources */,
 				1C1404E72C8E3C0700509329 /* OnboardingViewController.swift in Sources */,
 				1CC000372C90E8130091D682 /* FirestoreManager.swift in Sources */,
+				1C78558D2C9CC5540001781D /* AddWorkFlowViewController.swift in Sources */,
 				1C1404BD2C8E3C0700509329 /* Observable.swift in Sources */,
 				1C1404F92C8E3C0700509329 /* TabbarDataProvider.swift in Sources */,
 				1C1404C12C8E3C0700509329 /* BaseViewModel.swift in Sources */,
 				1C1404AA2C8E3C0700509329 /* Windows.swift in Sources */,
+				1C7855792C9CBC5F0001781D /* AddStateViewModel.swift in Sources */,
+				1C7855862C9CBCA60001781D /* AddTeamView.swift in Sources */,
 				1C1404D02C8E3C0700509329 /* NotificationManager.swift in Sources */,
 				1C1404A52C8E3C0700509329 /* AppStartLoader.swift in Sources */,
 				1C1404AC2C8E3C0700509329 /* Colors.swift in Sources */,
 				1C1404C82C8E3C0700509329 /* HapticManager.swift in Sources */,
 				1C1404F02C8E3C0700509329 /* PaywallView.swift in Sources */,
 				1C1404B82C8E3C0700509329 /* Images.swift in Sources */,
+				1C78558F2C9CC5540001781D /* AddWorkFlowViewModel.swift in Sources */,
 				1C1404B62C8E3C0700509329 /* Fonts.swift in Sources */,
 				1C1404B42C8E3C0700509329 /* EndPoint.swift in Sources */,
 				2C35E5C22C98E178005B19B5 /* WorkFlowViewController.swift in Sources */,
 				2C35E5C32C98E178005B19B5 /* WorkFlowView.swift in Sources */,
+				1C78557F2C9CBC890001781D /* AddItemView.swift in Sources */,
 				2C35E5C42C98E178005B19B5 /* WorkFlowViewModel.swift in Sources */,
 				1C1404A02C8E3C0700509329 /* AppConfigurator.swift in Sources */,
 				1C1404B22C8E3C0700509329 /* Constants.swift in Sources */,
+				1C7855852C9CBCA60001781D /* AddTeamViewController.swift in Sources */,
 				1C1404E92C8E3C0700509329 /* OnboardingView.swift in Sources */,
 				1C1404B02C8E3C0700509329 /* Localization.swift in Sources */,
 				1C1404BA2C8E3C0700509329 /* UIViewController+Extensions.swift in Sources */,
@@ -599,15 +684,18 @@
 				1C1404BF2C8E3C0700509329 /* BaseViewController.swift in Sources */,
 				1C1404C32C8E3C0700509329 /* BaseView.swift in Sources */,
 				1C1404E42C8E3C0700509329 /* SplashView.swift in Sources */,
+				1C7855782C9CBC5F0001781D /* AddStateView.swift in Sources */,
 				1C14049E2C8E3C0700509329 /* AppDelegate.swift in Sources */,
 				2C35E5AE2C98C6B8005B19B5 /* LoginViewController.swift in Sources */,
 				2C35E5B42C98C8B3005B19B5 /* InputView.swift in Sources */,
 				2C35E5AF2C98C6B8005B19B5 /* LoginView.swift in Sources */,
 				2C35E5B62C98DB81005B19B5 /* AuthManager.swift in Sources */,
+				1C7855802C9CBC890001781D /* AddItemViewModel.swift in Sources */,
 				2C35E5C92C98E1B0005B19B5 /* DefinationsViewController.swift in Sources */,
 				2C35E5CA2C98E1B0005B19B5 /* DefinationsView.swift in Sources */,
 				2C35E5CB2C98E1B0005B19B5 /* DefinationsViewModel.swift in Sources */,
 				2C35E5B02C98C6B8005B19B5 /* LoginViewModel.swift in Sources */,
+				1C7855772C9CBC5F0001781D /* AddStateViewController.swift in Sources */,
 				1C1404AE2C8E3C0700509329 /* SafeUnwrap.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -745,6 +833,7 @@
 				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "${PRODUCT_NAME}/Resources/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -769,6 +858,7 @@
 				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "${PRODUCT_NAME}/Resources/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

@@ -48,6 +48,8 @@ extension LoginView {
     }
     
     @objc func buttonDidTapped(_ sender: UIButton) {
+        loginButton.addTarget(self, action: #selector(buttonDidTapped(_:)), for: .touchUpInside)
+
         if sender.tag == 1 {
             buttonCallback?(.register)
             return
@@ -85,6 +87,8 @@ extension LoginView {
         loginButton.tag = 0
         loginButton.addTarget(self, action: #selector(buttonDidTapped(_:)), for: .touchUpInside)
         
+
+           
         registerButton.backgroundColor = .clear
         registerButton.setTitleColor(Colors.primaryColor.getUIColor(), for: .normal)
         registerButton.setTitle("Kayıt Ol", for: .normal)

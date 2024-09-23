@@ -23,7 +23,7 @@ class LoginViewController: BaseViewController<LoginViewModel, LoginView> {
             case .presentationModel(let model):
                 self.viewContainer.setPresentationModel(model: model)
             case .openRegisterPage:
-                self.presentScene(scene: .register, animated: true)
+              self.presentScene(scene: .register, animated: true)
             case .userLoginWithSuccess:
                 self.presentScene(scene: .tabbar, animated: true)
             case .userCannotLogined:
@@ -37,7 +37,7 @@ class LoginViewController: BaseViewController<LoginViewModel, LoginView> {
             guard let self else { return }
             switch state {
             case .register:
-                self.viewModel.registerButtonTapped()
+            self.viewModel.registerButtonTapped()
             case .login(let email, let password):
                 self.viewModel.loginButtonTapped(email: email, password: password)
             }

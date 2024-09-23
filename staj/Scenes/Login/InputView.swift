@@ -9,7 +9,8 @@ import UIKit
 import SnapKit
 
 class InputView: BaseView {
-    
+    private let textField = UITextField()
+
     private let titleLabel = UILabel()
     private let inputTextField = UITextField()
     
@@ -18,7 +19,9 @@ class InputView: BaseView {
         prepare()
         draw()
     }
-    
+    func getInputText() -> String {
+          return textField.text ?? ""
+      }
     required public init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
@@ -33,7 +36,16 @@ class InputView: BaseView {
 extension InputView {
     public func getText() -> String? {
         return inputTextField.text
+
     }
+}
+
+
+extension InputView{
+    func disableAutoFill() {
+        inputTextField.textContentType = .oneTimeCode
+
+       }
 }
 
 extension InputView {
@@ -45,6 +57,9 @@ extension InputView {
         
         inputTextField.backgroundColor = .white
         inputTextField.layer.cornerRadius = 16
+        
+ 
+
     }
 }
 
@@ -53,15 +68,16 @@ extension InputView {
         addArrangedSubview(titleLabel)
         addArrangedSubview(inputTextField)
         
-        setSpacing(8)
-        
-        titleLabel.snp.makeConstraints { make in
-            make.height.equalTo(17)
-        }
-        
-        inputTextField.snp.makeConstraints { make in
-            make.height.equalTo(50)
-        }
+    setSpacing(8)
+    
+    titleLabel.snp.makeConstraints { make in
+        make.height.equalTo(17)
+    }
+    
+    inputTextField.snp.makeConstraints { make in
+        make.height.equalTo(50)
+    }
+    
     }
 }
 

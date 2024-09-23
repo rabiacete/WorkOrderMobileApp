@@ -4,8 +4,8 @@
 //
 //  Created by Alperen Polat Gezgin on 17.09.2024.
 //
-
 import Foundation
+import UIKit
 
 class RegisterViewController: BaseViewController<RegisterViewModel, RegisterView> {
     
@@ -24,9 +24,34 @@ class RegisterViewController: BaseViewController<RegisterViewModel, RegisterView
                 self.viewContainer.setPresentationModel(model: model)
             case .backTapped:
                 self.dismiss(animated: true)
+            case .showSuccessMessage(let message):
+                self.showSuccessAlert(message: message)
+                self.presentScene(scene: .tabbar, animated: true)
+            case .showErrorMessage(let message): // Hata mesajını göster
+                self.showErrorAlert(message: message)
+            
             }
         }
     }
+    
+ 
+
+    private func showSuccessAlert(message: String) {
+        let alert = UIAlertController(title: "Başarılı", message: message, preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: "Tamam", style: .default))
+        present(alert, animated: true, completion: nil)
+    }
+    
+    func showErrorAlert(message: String) {
+       let alert = UIAlertController(title: "Hata", message: message, preferredStyle: .alert)
+       alert.addAction(UIAlertAction(title: "Tamam", style: .default))
+       present(alert, animated: true, completion: nil)
+   }
+    
+    private func navigateToLogin() {
+         let loginViewController = LoginViewController() // Login sayfasını oluştur
+         navigationController?.pushViewController(loginViewController, animated: true) // Yönlendirme
+     }
     
     private func bindViewCallback() {
         viewContainer.setButtonCallback { [weak self] state in
@@ -39,4 +64,7 @@ class RegisterViewController: BaseViewController<RegisterViewModel, RegisterView
             }
         }
     }
+     
 }
+
+
