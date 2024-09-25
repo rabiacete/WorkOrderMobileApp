@@ -32,6 +32,7 @@ class AuthManager {
     
     public func login(email: String, password: String, completion: @escaping Callback<Bool>) {
         if isUserLogined() {
+            completion(false)
             return
         }
         

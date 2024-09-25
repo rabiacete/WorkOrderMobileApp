@@ -6,13 +6,14 @@
 //
 
 import Foundation
+import Firebase
 
 protocol WorkFlowViewModelProtocol: BaseViewModelProtocol, ObserveManageable where ActionType == WorkFlowViewModel.WorkFlowAction {
 
 }
 
 class WorkFlowViewModel: BaseViewModel, ActionSendable {
-    
+ 
     enum WorkFlowAction {
         case presentationModel(PresentationModel)
     }
@@ -21,6 +22,7 @@ class WorkFlowViewModel: BaseViewModel, ActionSendable {
         
     }
     
+        
     var observer: Callback<WorkFlowAction>!
    
     override func viewDidLoad() {

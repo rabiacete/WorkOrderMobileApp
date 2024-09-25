@@ -23,10 +23,21 @@ class WorkFlowViewController: BaseViewController<WorkFlowViewModel, WorkFlowView
             case .presentationModel(let model):
                 self.viewContainer.setPresentationModel(model: model)
             }
+        }}
+    private func bindViewCallback() {
+        // View tarafında callback tetiklenince burası çalışacak
+        viewContainer.setButtonCallback { [weak self] action in
+            guard let self = self else { return }
+            switch action {
+            case .openAddWorkFlowView:
+                self.presentAddWorkFlowView()
+            }
         }
     }
     
-    private func bindViewCallback() {
-        
-    }
+    
+    private func presentAddWorkFlowView() {
+            let addWorkFlowVC = AddWorkFlowViewController() // AddWorkFlowViewController oluşturuluyor
+            self.navigationController?.pushViewController(addWorkFlowVC, animated: true) // Yeni ekran push ediliyor
+        }
 }

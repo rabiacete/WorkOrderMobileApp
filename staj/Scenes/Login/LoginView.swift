@@ -21,25 +21,17 @@ class LoginView: BaseView {
     private let passwordInputView = InputView()
     private let loginButton = UIButton()
     private let registerButton = UIButton()
-    
     var buttonCallback: Callback<LoginPageButtonStates>?
-   
     required init() {
         super.init()
         prepare()
         draw()
     }
-    
     required public init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
-    
     public func setPresentationModel(model: LoginViewModel.PresentationModel) {
-        
     }
-    
-   
-    
 }
 
 extension LoginView {
@@ -87,8 +79,6 @@ extension LoginView {
         loginButton.tag = 0
         loginButton.addTarget(self, action: #selector(buttonDidTapped(_:)), for: .touchUpInside)
         
-
-           
         registerButton.backgroundColor = .clear
         registerButton.setTitleColor(Colors.primaryColor.getUIColor(), for: .normal)
         registerButton.setTitle("Kayıt Ol", for: .normal)

@@ -38,11 +38,6 @@ class SplashViewModel: BaseViewModel, SplashViewModelProtocol, ActionSendable {
         DispatchQueue.main.asyncAfter(deadline: .now() + 1, execute: { [weak self] in
             guard let self else { return }
             
-            /*** #REMOVE */
-            self.sendAction(.openLogin) // Target Page
-            return
-            /*** #HERE */
-            
             if isFirstLaunch {
                 self.sendAction(.openOnboarding)
             } else {
@@ -54,5 +49,9 @@ class SplashViewModel: BaseViewModel, SplashViewModelProtocol, ActionSendable {
             }
   
         })
+        
+        
+    
+        
     }
 }

@@ -27,6 +27,16 @@ class DefinationsViewController: BaseViewController<DefinationsViewModel, Defina
     }
     
     private func bindViewCallback() {
-        
+        viewContainer.setAddButtonCallback { [weak self] state in
+            guard let self else { return }
+            switch state {
+            case .team:
+                self.presentScene(scene: .addTeam, animated: true)
+            case .item:
+                self.presentScene(scene: .addItem, animated: true)
+            case .state:
+                self.presentScene(scene: .addState, animated: true)
+            }
+        }
     }
 }

@@ -8,17 +8,13 @@
 import UIKit
 import SnapKit
 import SVProgressHUD
-
 enum RegisterPageButtonStates {
     case back
     case register(email: String, password: String, passwordConfirm: String)
 }
-
 class RegisterView: BaseView {
-    
     private let backButton = UIButton()
     private let pageTitleLabel = UILabel()
-    
     private let nameInputView = InputView()
     private let emailInputView = InputView()
     private let passwordInputView = InputView()
@@ -32,34 +28,27 @@ class RegisterView: BaseView {
         prepare()
         draw()
     }
-    
     required public init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
-    
     public func setPresentationModel(model: RegisterViewModel.PresentationModel) {
         
     }
 }
-
 extension RegisterView {
-    
     public func setButtonCallback(callback: @escaping Callback<RegisterPageButtonStates>) {
         self.buttonCallback = callback
     }
-    
     // E-posta doğrulaması için fonksiyon
     func isValidEmail(_ email: String) -> Bool {
         let emailRegEx = "[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,64}"
         let emailPred = NSPredicate(format: "SELF MATCHES %@", emailRegEx)
         return emailPred.evaluate(with: email)
     }
-
     // Şifre uzunluğu kontrolü için fonksiyon
     func isValidPassword(_ password: String) -> Bool {
         return password.count >= 6
     }
-    
     @objc func buttonDidTapped(_ sender: UIButton) {
          if sender.tag == 1 {
               buttonCallback?(.back)
@@ -67,29 +56,25 @@ extension RegisterView {
               let email = emailInputView.getText() ?? ""
               let password = passwordInputView.getText() ?? ""
               let passwordConfirm = passwordConfirmInputView.getText() ?? ""
-              
+            
               // Şifrelerin eşit olup olmadığını kontrol et
               if password != passwordConfirm {
                   SVProgressHUD.showError(withStatus: "Şifreler uyuşmuyor!")
                   return
               }
-              
               // E-posta doğrulaması
               if !isValidEmail(email) {
                   SVProgressHUD.showError(withStatus: "Geçerli bir e-posta adresi girin!")
                   return
               }
-                      
              // Şifre uzunluğu kontrolü
                       if !isValidPassword(password) {
                           SVProgressHUD.showError(withStatus: "Şifreniz en az 6 karakter olmalı!")
                           return
                       }
-              
               buttonCallback?(.register(email: email, password: password, passwordConfirm: passwordConfirm))
           }
-      }
-}
+      }}
 extension RegisterView {
     private func prepare() {
         backButton.setImage(Images.back.getUIImage(), for: .normal)

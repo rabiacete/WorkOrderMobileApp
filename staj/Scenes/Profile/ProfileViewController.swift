@@ -6,7 +6,6 @@
 //
 
 import Foundation
-
 class ProfileViewController: BaseViewController<ProfileViewModel, ProfileView> {
     
     // MARK: - Lifecycle
@@ -15,7 +14,6 @@ class ProfileViewController: BaseViewController<ProfileViewModel, ProfileView> {
         super.viewDidLoad()
         bindViewCallback()
     }
-    
     private func bindViewModel() {
         viewModel.observer = { [weak self] action in
             guard let self = self else { return }
@@ -25,8 +23,18 @@ class ProfileViewController: BaseViewController<ProfileViewModel, ProfileView> {
             }
         }
     }
-    
     private func bindViewCallback() {
-        
+        // Logout butonu callback'ini ayarla
+        viewContainer.setLogoutButtonCallback { [weak self] in
+            guard let self = self else { return }
+            self.logout()
+        }
     }
+    private func logout() {
+           // Kullanıcıyı login ekranına yönlendirme kodu
+           let loginViewController = LoginViewController() // LoginViewController'ı initialize et
+           loginViewController.modalPresentationStyle = .fullScreen // Tam ekran olmasını sağla
+           self.present(loginViewController, animated: true, completion: nil)
+       }
+    
 }

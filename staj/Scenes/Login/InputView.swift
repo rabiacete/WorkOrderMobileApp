@@ -1,24 +1,23 @@
 //
 //  InputView.swift
 //  staj
-//
-//  Created by Alperen Polat Gezgin on 16.09.2024.
-//
+////
 
 import UIKit
 import SnapKit
 
 class InputView: BaseView {
-    private let textField = UITextField()
+    public let textField = UITextField()
 
     private let titleLabel = UILabel()
     private let inputTextField = UITextField()
     
-    required init() {
+   required init() {
         super.init()
         prepare()
         draw()
     }
+    
     func getInputText() -> String {
           return textField.text ?? ""
       }
@@ -44,10 +43,8 @@ extension InputView {
 extension InputView{
     func disableAutoFill() {
         inputTextField.textContentType = .oneTimeCode
-
        }
 }
-
 extension InputView {
     private func prepare() {
         backgroundColor = .clear
@@ -57,12 +54,8 @@ extension InputView {
         
         inputTextField.backgroundColor = .white
         inputTextField.layer.cornerRadius = 16
-        
- 
-
     }
 }
-
 extension InputView {
     private func draw() {
         addArrangedSubview(titleLabel)
@@ -80,7 +73,6 @@ extension InputView {
     
     }
 }
-
 struct InputViewPresentationModel {
     let title: String
     let placeholder: String

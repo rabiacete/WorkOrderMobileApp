@@ -6,16 +6,13 @@
 //
 import Foundation
 import UIKit
-
 class RegisterViewController: BaseViewController<RegisterViewModel, RegisterView> {
-    
     // MARK: - Lifecycle
     override func viewDidLoad() {
         bindViewModel()
         super.viewDidLoad()
         bindViewCallback()
     }
-    
     private func bindViewModel() {
         viewModel.observer = { [weak self] action in
             guard let self = self else { return }
@@ -29,19 +26,13 @@ class RegisterViewController: BaseViewController<RegisterViewModel, RegisterView
                 self.presentScene(scene: .tabbar, animated: true)
             case .showErrorMessage(let message): // Hata mesajını göster
                 self.showErrorAlert(message: message)
-            
             }
-        }
-    }
-    
- 
-
+        }}
     private func showSuccessAlert(message: String) {
         let alert = UIAlertController(title: "Başarılı", message: message, preferredStyle: .alert)
         alert.addAction(UIAlertAction(title: "Tamam", style: .default))
         present(alert, animated: true, completion: nil)
     }
-    
     func showErrorAlert(message: String) {
        let alert = UIAlertController(title: "Hata", message: message, preferredStyle: .alert)
        alert.addAction(UIAlertAction(title: "Tamam", style: .default))
@@ -62,9 +53,6 @@ class RegisterViewController: BaseViewController<RegisterViewModel, RegisterView
             case .register(let email, let password, let passwordConfirm):
                 self.viewModel.registerButtonTapped(email: email, password: password, passwordConfirm: passwordConfirm)
             }
-        }
-    }
-     
-}
+        }}}
 
 

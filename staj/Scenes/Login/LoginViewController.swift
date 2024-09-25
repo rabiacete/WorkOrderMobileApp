@@ -6,16 +6,13 @@
 //
 
 import Foundation
-
 class LoginViewController: BaseViewController<LoginViewModel, LoginView> {
-    
     // MARK: - Lifecycle
     override func viewDidLoad() {
         bindViewModel()
         super.viewDidLoad()
         bindViewCallback()
     }
-    
     private func bindViewModel() {
         viewModel.observer = { [weak self] action in
             guard let self = self else { return }
@@ -29,9 +26,7 @@ class LoginViewController: BaseViewController<LoginViewModel, LoginView> {
             case .userCannotLogined:
                 self.viewContainer.showLoginError()
             }
-        }
-    }
-    
+        }}
     private func bindViewCallback() {
         viewContainer.setButtonCallback { [weak self] state in
             guard let self else { return }
@@ -41,8 +36,4 @@ class LoginViewController: BaseViewController<LoginViewModel, LoginView> {
             case .login(let email, let password):
                 self.viewModel.loginButtonTapped(email: email, password: password)
             }
-        }
-    }
-    
-    
-}
+        }}}

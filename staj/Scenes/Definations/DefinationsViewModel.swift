@@ -6,6 +6,8 @@
 //
 
 import Foundation
+import FirebaseFirestoreInternal
+
 
 protocol DefinationsViewModelProtocol: BaseViewModelProtocol, ObserveManageable where ActionType == DefinationsViewModel.DefinationsAction {
 
@@ -18,13 +20,20 @@ class DefinationsViewModel: BaseViewModel, ActionSendable {
     }
     
     struct PresentationModel {
+        let teams: [Team] // Team modelini ekleyin
         
     }
     
     var observer: Callback<DefinationsAction>!
-   
+    private var teams: [Team] = [] // Kayıtlı ekipleri tutan dizi
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        
+             }
     }
-}
+    
+ 
+       
+

@@ -23,6 +23,10 @@ public enum Scenes {
     case tab1
     case tab2
     case tab3
+    case addTeam
+    case addItem
+    case addState
+    case addWorkFlow
     
     var controller: UIViewController {
         switch self {
@@ -32,8 +36,8 @@ public enum Scenes {
             return OnboardingViewController()
         case .login:
             return LoginViewController()
-        case .register:
-            return RegisterViewController()
+       case .register:
+           return RegisterViewController()
         case .paywall:
             return PaywallViewController()
         case .tabbar:
@@ -44,6 +48,14 @@ public enum Scenes {
             return DefinationsViewController()
         case .tab3:
             return ProfileViewController()
+        case .addTeam:
+            return AddTeamViewController()
+        case .addItem:
+            return AddItemViewController()
+        case .addState:
+            return AddStateViewController()
+        case .addWorkFlow:
+            return AddWorkFlowViewController()
         }
     }
 }
